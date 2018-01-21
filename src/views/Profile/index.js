@@ -29,6 +29,12 @@ class Profile extends PureComponent {
     match: PropTypes.object
   }
 
+  static defaultProps = {
+    profile: {},
+    activity: {},
+    statistics: []
+  }
+
   get isFetching () {
     return this.props.isFetching
   }
@@ -42,11 +48,11 @@ class Profile extends PureComponent {
   }
 
   get profile () {
-    return this.props.profile || {}
+    return this.props.profile
   }
 
   get activity () {
-    return this.props.activity || {}
+    return this.props.activity
   }
 
   get lastActiveYear () {
