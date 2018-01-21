@@ -1,0 +1,46 @@
+.User {
+  display: flex;
+  padding: 25px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaecef;
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+  }
+
+  .info {
+    margin-left: 15px;
+
+    .name {
+      a {
+        color: #000;
+      }
+
+      .login {
+        margin-left: 10px;
+        font-size: .9rem;
+        color: #586069;
+      }
+    }
+
+    .bio {
+      margin-top: 5px;
+      font-size: .8rem;
+      color: #586069;
+    }
+  }
+
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .info {
+      margin: 20px 0 0 0;
+      text-align: center;
+    }
+  }
+}

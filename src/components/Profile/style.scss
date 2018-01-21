@@ -1,0 +1,46 @@
+$avatarSize: 230px;
+
+.Profile {
+  width: 100%;
+
+  .avatar {
+    width: $avatarSize;
+    height: $avatarSize;
+    border-radius: 6px;
+    margin: 0 auto 16px;
+  }
+
+  .displayName {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .nickName {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 300;
+    color: #666;
+  }
+
+  .bio {
+    font-size: 14px;
+    color: #6a737d;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    margin-top: 40px;
+  }
+
+  .info {
+    margin-top: 20px;
+    font-size: .9rem;
+    font-weight: lighter;
+
+    .line {
+      margin: 5px 0;
+    }
+
+    .label {
+      font-weight: 300;
+    }
+  }
+}

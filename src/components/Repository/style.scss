@@ -1,0 +1,71 @@
+.Repository {
+  display: block;
+  padding: 24px 0;
+  border-bottom: 1px #e1e4e8 solid;
+
+  .name {
+    color: #0366d6;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .fork {
+    margin-top: 8px;
+    font-size: .8rem;
+    color: #586069;
+  }
+
+  .description {
+    margin-top: 8px;
+    color: #586069;
+    font-size: .9rem;
+  }
+
+  .info {
+    color: #586069;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 12px;
+
+    .inline {
+      display: flex;
+      align-items: center;
+      margin: 0 8px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .ball {
+      width: 12px;
+      height: 12px;
+      margin-right: 5px;
+      border-radius: 50%;
+      background-color: #56d6ae;
+    }
+
+    .ball[data-lang='javascript'] {
+      background-color: #f1e05a;
+    }
+
+    .ball[data-lang='c++'] {
+      background-color: #f34b7d;
+    }
+
+    .ball[data-lang='python'] {
+      background-color: #3572A5;
+    }
+
+    .icon {
+      fill: currentColor;
+      margin-right: 2px;
+    }
+
+    div {
+      margin-right: 10px;
+    }
+  }
+
+}

@@ -1,0 +1,75 @@
+$iconSize: 32px;
+$textColor: #c1c1c1;
+
+.Footer {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  min-height: 100px;
+
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $textColor;
+    margin-top: 40px;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .item {
+      text-align: center;
+      margin: 40px 10px;
+    }
+
+    @media (max-width: 980px) {
+      flex-direction: column;
+      align-items: center;
+
+      .item {
+        margin: 10px;
+      }
+    }
+
+    .icon {
+      width: $iconSize;
+      height: $iconSize;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin: 0 auto 5px;
+      //filter: grayscale(100%)
+    }
+
+    .label {
+      color: $textColor;
+      font-size: 14px;
+    }
+
+    .github {
+      background-image: url("https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png");
+    }
+
+    .graphql {
+      background-image: url("http://graphql.org/img/logo.svg");
+    }
+
+    .react {
+      background-image: url("https://cdn.worldvectorlogo.com/logos/react.svg");
+    }
+
+    .redux {
+      background-image: url("https://getstream-blog.imgix.net/blog/wp-content/uploads/2016/05/svgporn-redux-300x286.png");
+    }
+
+    .webpack {
+      background-image: url("https://cdn.worldvectorlogo.com/logos/webpack-icon.svg");
+    }
+
+    .d3 {
+      background-image: url("http://thomasrickard.uk/images/projects/javascript/images/d3-getting-started/thumbnail.svg");
+    }
+  }
+}

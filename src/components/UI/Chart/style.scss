@@ -1,0 +1,22 @@
+.Chart {
+  display: block;
+  width: 100%;
+
+  .item {
+    padding: 10px 15px;
+    background-color: #0366d6;
+    fill: #0366d6;
+    color: white;
+    margin-bottom: 5px;
+  }
+
+  .label {
+    font-size: .9rem;
+    font-weight: 300;
+
+    path, line {
+      fill: none;
+      display: none;
+    }
+  }
+}

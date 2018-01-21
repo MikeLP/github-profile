@@ -1,0 +1,29 @@
+$iconSize: 100px;
+
+.Item {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+
+  .title {
+    font-size: 1.2rem;
+    margin: 30px 0 10px;
+    text-transform: capitalize;
+  }
+
+  .icon {
+    width: $iconSize;
+    height: $iconSize;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+
+  .description {
+    font-weight: 200;
+    font-size: .9rem;
+  }
+}
